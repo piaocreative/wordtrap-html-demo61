@@ -1,0 +1,42 @@
+
+/* ----------------------------------------------------------------
+
+	slider.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Slider
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for all sliders. Thanks!
+-----------------------------------------------------------------*/
+
+.product-slider {
+	position:  relative;
+
+	.arrow {
+		display: none;
+		
+		@include media-breakpoint-up(xl) {
+			position: absolute;
+			top: 30%;
+			right: -7%;
+			width: fit-content;
+			display: block;
+		}
+	}
+	
+	p {
+		color: $heading-color;
+		opacity: 0.6;
+		margin-bottom: 1.2rem;
+	}
+
+	.active {
+		color: $theme-color;
+	}
+}

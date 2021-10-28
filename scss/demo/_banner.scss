@@ -1,0 +1,66 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+#banner {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;   
+    // height: 35rem;        
+
+    &.home-banner {
+        background-image: url(../images/banner/banner_bg.png);
+        height: 53.875rem; 
+    }
+
+    &.about-banner {
+        background-image: url(../images/banner/about_banner_bg.png);        
+        height: auto;
+        padding-top: $spacer * 11.9;
+        padding-bottom: $spacer * 3.25;
+    }
+
+    &.error-banner {
+        background-image: url(../images/404.png);
+        @include media-breakpoint-up(xl) {
+            height: 68.75rem; 
+        }
+        position: relative;
+    }
+}
+
+#error-banner {
+    background-image: url(../images/banner/404-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 48.7rem;
+    @include media-breakpoint-down(lg) {
+        height: 30rem;
+    }
+}
+
+#contact-banner {
+    background-image: url(../images/banner/contact-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 43.7rem;
+
+    @include media-breakpoint-down(lg) {
+        height: 30rem;
+    }
+}

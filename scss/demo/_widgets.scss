@@ -1,0 +1,175 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	.widget-title {
+		color: black;
+		font-size: 0.875rem;
+		font-family: $body-font;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: $spacer * 0.5;
+	}	
+	.widget-content {
+
+		.widget-content-subheading {
+			h5 {
+				color:black;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				text-transform: uppercase;
+			}
+			p {
+				margin-bottom: 1rem;
+			}
+
+			.input-group {
+
+				#search-addon {
+					align-self: center;
+					color:black;
+					position: absolute;
+					right: 1rem;
+				}
+			}
+		}
+	}
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			padding-top: $spacer * 0.75;
+
+			li {
+				padding: 0 $spacer * 0.25;
+
+				&:first-child {
+					padding-left: 0;
+				}
+		
+				a {
+					color: $theme-color;
+					display: inline-block;
+					line-height: 1.8125rem;
+					@include transition(all 0.3s ease-in-out);
+					font-family: $body-font;
+					font-size: 1rem;
+					font-weight: 600;
+		
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+
+			@include media-breakpoint-up(xl) {
+				flex-direction: row;
+			}
+
+			li {
+				a {
+					padding-right: 0.5rem;
+					color: black;
+					font-size: 1rem;
+					font-weight: 600;
+					font-family: $body-font;
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: $spacer * 0.25;
+				height: 2rem;		
+				width: 3.5rem;		
+
+				@include border-radius(0.25rem);
+
+				&.visa {
+					background-image: url(../images/payments/visa.png);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.png);
+				}
+
+				&.express {
+					background-image: url(../images/payments/stripe.png);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/verisign.png);
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			p, a {
+				color: #61605f;
+				display: block;
+
+				&.h4 {
+					font-size: 1.5rem;
+					line-height: 1.25;
+				}
+			}
+		}
+	}
+
+	// Widget - Subscribe
+	&.widget-subscribe {
+		.widget-content {
+			#widget-subscribe-form {
+				.form-control,
+				.btn {
+					@include border-radius(1.625rem);
+				}
+
+				.input-group-append {
+					margin-left: -$spacer * 2.875;
+				}
+			}
+		}
+	}
+}
+.footer-social {
+	>a {
+		color: #b5452b !important;
+		padding: 2px;
+	}
+}

@@ -1,0 +1,282 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+	z-index: 1;
+	// Transparent header
+	&.transparent-header {
+		background: transparent;
+		z-index: 199;
+
+		& + #banner,
+		& + #content {
+			@include media-breakpoint-up(xl) {
+				top: -$header-height;
+				margin-bottom: -$header-height;
+				position: relative;
+			}
+		}		
+	}
+}
+
+.nav {
+	flex-wrap: nowrap;
+}
+
+.navbar-light,
+.navbar-dark {
+	.navbar-toggler {
+		border-radius: 0;
+		border-color: transparent;
+
+		&:focus {
+			box-shadow: none;			
+		}
+	}	
+}
+
+.navbar {
+	padding: $spacer 0;
+	z-index: 1;
+	background-color: transparent;
+
+	@include media-breakpoint-up(xl) {
+		padding: 0;
+	}
+
+	
+}
+
+
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-top: $spacer * 2.5;
+	margin-bottom: $spacer * 2.5;
+	margin-right: $spacer * 2.25;
+
+	img {
+		max-width: 6.5rem;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		color: $primary-menu-font-color;
+		display: block;
+		font-family: $primary-menu-font;
+		font-weight: $primary-menu-font-weight;
+		font-size: $primary-menu-font-size;
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;	
+		padding: $spacer * 0.5 $spacer;	
+		
+		@include media-breakpoint-up(xl) {			
+			line-height: 1;
+			padding: $spacer * 2.5 $spacer;
+		}
+
+		&:hover {
+			font-weight: 500;
+		}
+	}
+
+	.nav-item {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.current {
+		font-weight: 500;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+#top-links {
+	.nav-item {			
+		@include media-breakpoint-up(xl) {
+			padding-right: $spacer * 1.875;		
+		}
+	}
+
+	a.nav-link {
+		color: #292725;
+		display: block;
+		font-size: 0.75rem;	
+		font-weight: 400;
+		
+		@include media-breakpoint-up(xl) {
+			padding: 0;		
+		}
+
+		&:hover {
+			color: #292725;
+			font-weight: 500;
+		}
+	}
+
+	.current {
+		font-weight: 500s;
+	}
+
+	.dropdown-toggle {
+		&::after {
+			margin-left: $spacer * 0.75;
+		}
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: 0;
+		top: 1.875rem;
+		left: 0;
+		width: 100%;		
+		margin: 0;
+		border-top: 3px solid $link-hover-color;
+
+		@include border-radius(0);
+
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+
+		@include media-breakpoint-up(xl) {
+			width: 8.75rem;
+		}
+
+		a.dropdown-item {
+			color: $heading-color;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			font-size: 0.75rem;				
+			padding: 0 $spacer * 0.75;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: $spacer * 0.25;
+		}
+	}
+}
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {
+	display: flex;
+
+	.phone-number {
+		a {
+			color: $heading-color;
+			font-size: 1rem;
+			font-weight: 600;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+#top-btns {
+	margin-right: $spacer * 3.125;
+
+	@include media-breakpoint-down(xl) {
+		padding: $spacer 0;
+	}
+	
+	.nav-link {
+		color: $top-btn-font-color;
+		font-size: $top-btn-font-size;
+		line-height: 1;
+		padding: 0 $spacer * 0.75;
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

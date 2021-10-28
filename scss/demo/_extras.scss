@@ -1,0 +1,55 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here extra styles for demo. Thanks!
+-----------------------------------------------------------------*/
+
+  .contact-us {
+		.row {
+			>div {
+				padding: 0;
+			}
+		}
+  }
+
+	.me-n1 {
+		margin-right: -1rem;
+	}
+
+	.error-404 {
+		@include media-breakpoint-up(xl) {
+			margin-top: 7rem;
+		}	
+
+		h1 {
+			@include media-breakpoint-up(xl) {
+				font-size: 18.75rem;
+			}
+			font-size: 10rem;
+		}
+	}
+
+	.bg-grey {
+		background-color: #f4f4f4;
+	}
+
+	.trend-img {
+		img {
+		height: fit-content;
+		}
+	
+		p{
+			line-height: normal;
+		}
+	}
