@@ -8,9 +8,8 @@
 // Font Family
 .body-font { font-family: $body-font !important; }
 .heading-font { font-family: $heading-font !important; }
-.third-font { font-family:  $third-font !important; }
-.body-medium-italic { font-family: 'GilroyMediumItalic' !important; } 
-.body-semi-bold { font-family: 'GilroySemiBold' !important; } 
+
+.fw-semi-bold { font-weight: 600 !important; }
 
 // Font Weight
 
@@ -19,6 +18,12 @@
 
 
 //-------------------- Image --------------------//
+
+.bg-cover {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 img {
 	&.img-full {
@@ -36,27 +41,3 @@ img {
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
 }
-
-.section-padding-top {
-	padding-top: $section-spacer;
-}
-
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
-}
-
-.section-margin-top {
-	margin-top: $section-spacer;
-}
-
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
-}
-
-.container-fluid.padding-left {
-	width: 100%;
-	@include media-breakpoint-up(xl) {
-		padding-left: 7.5rem;
-	}
-}
-

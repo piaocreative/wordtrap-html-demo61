@@ -104,7 +104,8 @@
 
     <!-- Content
     ============================================= -->
-    <section id="banner" class="container-fluid padding-left bg-primary position-relative">
+    <section id="banner" class="bg-primary position-relative">
+      <div class="container-fluid p-0">
         <div class="row align-items-end g-0">
           <div class="col-xl-5">
             <img class="w-100" src="./images/about/about-banner.png" alt="banner" class="img-fluid">
@@ -115,9 +116,10 @@
                 <p class="text-white lh-sm mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing. </p>
                 <p class="text-white lh-sm mb-5 pb-4">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
             </div>
-            <p class="bg-dark text-white text-center mb-0 me-n1">SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN         </p>
+            <marquee class="bg-dark text-white text-center mb-0">SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN     SCROLL DOWN         </marquee>
           </div>
         </div>
+      </div>
     </section>
   
     <section id="content">
@@ -126,13 +128,17 @@
         <!-- discription
         ============================================= -->
         <div class="section pb-0">
-          <div class="container col-7">
-            <p class="fs-3 text-center lh-nomal body-medium-italic">“You start to feel completely different in any hat.
-              It's
-              just that the outlook on the surrounding world changes
-              a little. After all, when you know who, where, how and
-              from what made your headdress - it raises to a different
-              level in our faceless globalized world”</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-7">
+                <p class="fs-3 text-center lh-nomal fst-italic">“You start to feel completely different in any hat.
+                  It's
+                  just that the outlook on the surrounding world changes
+                  a little. After all, when you know who, where, how and
+                  from what made your headdress - it raises to a different
+                  level in our faceless globalized world”</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -150,7 +156,9 @@
                   <h3 class="title mt-5">Our Philosophy</h3>
                 </div>
                 <div class="row">
-                  <p class="lh-sm col-xl-5 offset-xl-1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br><br> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
+                  <div class="col-xl-5 offset-xl-1">
+                    <p class="lh-sm">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br><br> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
+                  </div>
                   <div class="col-xl-5 offset-xl-1">
                     <p class="lh-sm">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney.
                       College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
@@ -170,9 +178,13 @@
             <div class="heading-block">
               <h3 class="title">History</h3>
             </div>
-            <div class="d-flex flex-column flex-sm-row">
-              <p class="pe-sm-3 col-sm-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br><br>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
-              <p class="pe-sm-3 col-sm-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.<br><br>Looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="pe-sm-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br><br>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
+              </div>
+              <div class="col-sm-6">
+                <p class="pe-sm-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.<br><br>Looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from.</p>
+              </div>
             </div>
             <img class="img-fluid" src="images/about/history.png"></img>
           </div>    
@@ -182,7 +194,7 @@
         <div class="section pt-0">
           <div class="container">
             <div class="row">
-              <div class="d-md-flex mb-2">
+              <div class="row mb-2">
                 <div class="col-xl-4 col-12">
                   <div class="heading-block">
                     <h3 class="title">Why Women Choose Us</h3>
@@ -190,14 +202,16 @@
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections.<br><br>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                   </p>
-                  <button class="btn-primary border-0 px-5 py-3 body-semi-bold fs-4 bg-primary text-white">DISCOVER COLLECTIONS</button>
+                  <button class="btn-primary border-0 px-5 py-3 fw-semi-bold fs-4 bg-primary text-white">DISCOVER COLLECTIONS</button>
                 </div>
-                <div class="col-xl-7 offset-xl-1 d-flex">
-                  <div class="col-md-5 col-sm-6 mt-auto">
-                    <img  src="images/about/history1.png" class="img-fluid p-2">
-                  </div> 
-                  <div class="col-md-7 col-sm-6 mt-auto">
-                    <img  src="images/about/history2.png" class="img-fluid p-2">
+                <div class="col-xl-7 offset-xl-1">
+                  <div class="row">
+                    <div class="col-md-5 col-sm-6 mt-auto">
+                      <img  src="images/about/history1.png" class="img-fluid p-2">
+                    </div> 
+                    <div class="col-md-7 col-sm-6 mt-auto">
+                      <img  src="images/about/history2.png" class="img-fluid p-2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,7 +228,7 @@
                   <div class="col-md-5 mt-auto">
                     <img  src="images/about/founder.png" class="img-fluid p-2">
                   </div> 
-                  <div class=" col-xl-5 col-md-7 p-5 offset-xl-1 d-flex flex-column justify-content-center">
+                  <div class="col-xl-5 col-md-7 p-5 offset-xl-1 d-flex flex-column justify-content-center">
                     <div class="heading-block">
                       <h3 class="title lh-base">About our founders Emily Jenson and  Sarah Riddick</h3>
                     </div>
@@ -240,7 +254,7 @@
               suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
               facilisis mod tempor incididunt.</p>
             <div class="col-md-4 m-auto align-items-center">
-              <button class="btn-primary border-0 px-5 py-3 body-semi-bold fs-4 bg-primary text-white">DISCOVER</button>
+              <button class="btn-primary border-0 px-5 py-3 fw-semi-bold fs-4 bg-primary text-white">DISCOVER</button>
             </div>
           </div>
           <div class="container g-0 mt-5 product-slider">
@@ -283,37 +297,71 @@
             <div class="heading-block">
               <h3 class="title">Our blog and news</h3>
             </div>
-            <div class="row arrival">
+            <div class="row arrival product-slider">
+
               <div class="col-xl-4">
-                <div class="product">                                    
-                  <div class="product-image position-relative">
-                    <div class="position-absolute top-50 start-0 translate-middle-y px-4 text-white">
-                      <p class="mb-0 body-semi-bold">STYLE</p>
-                      <h3 class="text-white lh-sm">Collections of sneakers with a hat</h3>
-                      <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus </p>
-                      <a class="px-4 py-3 text-white border">READ MORE</a>
-                    </div>
+
+                <article class="post">
+                  <div class="post-thumbnail">
                     <a href="#"><img src="images/news/news1.png" alt="Product Image" class="img-fluid"></a>
                   </div>
-                </div> 
+                  <div class="post-content">
+                    <p class="mb-0 entry-meta fw-semi-bold">STYLE</p>
+                      <h3 class="entry-title">Collections of sneakers with a hat</h3>
+                      <div class="entry-content">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus </p>
+                      </div>
+                      <a href="#" class="entry-link">READ MORE</a>
+                  </div>
+                </article>
+
               </div>
+              
               <div class="col-xl-4">
-                <div class="product">                                    
-                  <div class="product-image">
+
+                <article class="post">
+                  <div class="post-thumbnail">
                     <a href="#"><img src="images/news/news2.png" alt="Product Image" class="img-fluid"></a>
-                    <h3 class="pt-2">Dior Summer Hat</h3>
                   </div>
-                </div> 
+                  <div class="post-content">
+                    <p class="mb-0 entry-meta fw-semi-bold">STYLE</p>
+                      <h3 class="entry-title">Dior Summer Hat</h3>
+                      <div class="entry-content">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus </p>
+                      </div>
+                      <a href="#" class="entry-link">READ MORE</a>
+                  </div>
+                </article>
+
               </div>
+
               <div class="col-xl-4">
-                <div class="product">                                    
-                  <div class="product-image">
+
+                <article class="post">
+                  <div class="post-thumbnail">
                     <a href="#"><img src="images/news/news3.png" alt="Product Image" class="img-fluid"></a>
-                    <h3 class="pt-2">How to store felt hats?</h3>
                   </div>
-                </div> 
+                  <div class="post-content">
+                    <p class="mb-0 entry-meta fw-semi-bold">STYLE</p>
+                      <h3 class="entry-title">Dior Summer Hat</h3>
+                      <div class="entry-content">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus </p>
+                      </div>
+                      <a href="#" class="entry-link">READ MORE</a>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="arrow">
+                <div class="slick-up mb-4"><img src="./images/up-arrow.png" alt="icon"></div>
+                <p class="active">01</p>
+                <p>02</p>
+                <p>03</p>
+                <div class="slick-down"><img src="./images/down-arrow.png" alt="icon"></div>
               </div>
             </div>
+            
           </div>
 
         </div><!-- #news -->
@@ -329,26 +377,28 @@
                           <h3 class="title text-white">Keep in touch</h3>
                         </div>
                         <p class="lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus </p>
-                        <div class="d-flex mb-4 flex-column">
-                          <input class="mb-1 form-control" placeholder="Enter your name">       
-                          <input class="mb-1 form-control" placeholder="Enter your phone number">  
-                          <input class="mb-1 form-control" placeholder="Enter your e-mail">    
-                          <div class="d-flex">
+                        <!-- <div class="d-flex mb-4 flex-column"> -->
+                          <div class="mb-3">
+                            <input class="form-control bg-transparent" placeholder="Enter your name">       
+                          </div>
+                          <div class="mb-3">
+                            <input class="form-control bg-transparent" placeholder="Enter your phone number">  
+                          </div>
+                          <div class="mb-3">
+                            <input class="form-control bg-transparent" placeholder="Enter your e-mail">    
+                          </div>
+                          <div class="d-flex align-items-center mb-3">
                             <input type="checkbox" name=""><label class="ps-3">I agree with the terms of personal data </label>   
                           </div>
-                        </div>
-                        <a class="px-4 py-3 bg-white border">SEND FORM</a>
+                        <!-- </div> -->
+                        <a href="#" class="px-4 py-3 bg-white border d-inline-block">SEND FORM</a>
                       </div>
                       <a href="#"><img src="images/about/contact1.png" alt="Product Image" class="img-fluid"></a>
                   </div>
                 </div> 
             </div>
-            <div class="col-xl-6">
-                <div>                                    
-                  <div class="product-image">
-                    <a href="#"><img src="images/about/contact2.png" alt="Product Image" class="img-fluid"></a>
-                  </div>
-                </div> 
+            <div class="col-xl-6">                 
+              <img src="images/about/contact2.png" alt="Product Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -360,9 +410,9 @@
     ============================================= -->
     <footer id="footer">
 
-      <!-- Footer Bottom
+      <!-- Footer main
       ============================================= -->
-      <div id="footer-bottom">
+      <div id="footer-main">
 
         <div class="container">
 
@@ -374,7 +424,7 @@
                   <a><img src="images/logo.png" class="mb-5"></a>
                   <ul>
                     <li class="text-start">
-                      <a href="#" class="fs-5 body-semi-bold mb-3">Contacts</a>
+                      <h5 class="widget-title mb-3">Contacts</h5>
                       <div class="widget-content-subheading mt-3">
                         <p class="mb-0">Phone: + 1 (856) 836-23-09</p>
                         <p class="mb-0"> E-mail: saller@gmail.com</p>
@@ -382,7 +432,7 @@
                       </div>                                            
                     </li>
                     <li class="text-start mt-xl-0 mt-4">
-                      <a href="#" class="fs-5 body-semi-bold mb-3">Menu</a>
+                      <h5 class="widget-title mb-3">Menu</h5>
                         <div class="d-flex justify-content-xl-center justify-content-between mt-3">
                           <div class="widget-content-subheading pe-5">
                             <p class="mb-0">Main</p>
@@ -398,7 +448,7 @@
                     </li>
                     
                     <li class="text-start mt-xl-0 mt-4">
-                      <a href="#" class="fs-5 body-semi-bold mb-3 ">Other</a>
+                      <h5 class="widget-title mb-3">Other</h5>
                         <div class="d-flex justify-content-xl-center justify-content-between mt-3">
                           <div class="widget-content-subheading pe-5">
                             <p class="mb-0">Delivery</p>
@@ -413,7 +463,7 @@
                         </div>
                     </li>
                     <li class="text-start mt-xl-0 mt-4">
-                      <a href="#" class="fs-5 body-semi-bold mb-3">Follow us</a>
+                        <h5 class="widget-title mb-3">Follow us</h5>
                         <div class="d-flex justify-content-xl-center justify-content-start footer-social mt-3">
                           <a class="ps-0">Fb</a> 
                           <a>Ig</a> 
@@ -422,11 +472,11 @@
                         </div>
                     </li> 
                     <li class="text-start mt-xl-0 mt-4">
-                      <a href="#" class="fs-5 body-semi-bold mb-3">Privacy policy</a>
-                          <div class="widget-content-subheading pe-5 mt-3">
-                            <p class="mb-1">2021 SALLER. All rights </p>
-                            <p>Privacy policy. Public offer.</p>
-                          </div> 
+                      <h5 class="widget-title mb-3">Privacy policy</h5>
+                      <div class="pe-5 mt-3">
+                        <p class="mb-1">2021 SALLER. All rights </p>
+                        <p>Privacy policy. Public offer.</p>
+                      </div> 
                     </li>
                   </ul>
                 </div>                                    

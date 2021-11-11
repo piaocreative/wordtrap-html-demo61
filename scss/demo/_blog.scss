@@ -1,0 +1,37 @@
+.post {
+    position: relative;
+    margin-bottom: 1.875rem;
+
+    &:hover {
+        .post-content {
+            padding: 2rem;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .entry-meta, .entry-link, .entry-content {
+            opacity: 1;
+        }
+    }
+}
+
+.post-thumbnail {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.post-content {
+    .entry-link {
+        padding: 1rem 1.5rem;
+        color: $white;
+        border: 1px solid $white;
+    }
+
+    .entry-meta, .entry-link, .entry-content {
+        opacity: 0;
+    }
+
+    @include transition(all 0.3s ease-in-out);
+}

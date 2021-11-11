@@ -49,15 +49,17 @@
 
 	.product-details {
 		padding: $spacer * 1.25 0;
-		p {
-			font-size: 0.8rem;
-			text-align: left;
-		}		
 	}
 
+	.product-title {
+		font-family: $body-font;
+		font-size: 0.8rem;
+		font-weight: 400;
+	}		
+	
 	.product-price {
 		color: $theme-color;
-		font-family: $third-font;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1.125rem;
 		font-weight: 600;
 		line-height: 1;

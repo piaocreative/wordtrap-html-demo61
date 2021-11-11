@@ -31,16 +31,3 @@ textarea {
         background-size: 100%;
     }
 }
-
-.form-control {
-    padding: 0.8rem 2rem;
-    background: transparent;
-    border: solid 1px white;
-    margin: 0.75rem;
-    
-    &::placeholder {
-        color: white;
-        font-family: $body-font;
-        font-size: 1rem;
-    }
-}
